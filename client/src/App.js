@@ -5,10 +5,12 @@ import HomePage from "./pages/HomePage/HomePage";
 // import Navbar from "./components/Navbar/Navbar";
 
 function App() {
+  // eslint-disable-next-line
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      // eslint-disable-next-line
       const locomotiveScroll = new LocomotiveScroll();
 
       setTimeout(() => {

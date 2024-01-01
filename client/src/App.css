@@ -1,9 +1,5 @@
-/* .option-wrapper {
-  position: fixed;
-  bottom: 50px;
-  right: 100px;
-  background-color: var(--pastle-pink);
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: rgb(237, 106, 106);
-} */
+.test {
+  background-color: beige;
+  width: 100vw;
+  height: 100vh;
+}

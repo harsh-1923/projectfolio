@@ -1,0 +1,16 @@
+.animated-divider {
+  content: " ";
+  /* background-color: black; */
+  height: 1px;
+  /* padding: 0px 10px; */
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.divider-wrapper {
+  min-width: 100vw;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
