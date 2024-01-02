@@ -1,8 +1,15 @@
-import "./App.css";
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
+//Components
+import GridLayput from "./components/GridLayout/GridLayout";
+import Blobs from "./components/Blobs/Blobs";
+import Navbar from "./components/Navbar/Navbar";
+
+// Pages
 import HomePage from "./pages/HomePage/HomePage";
-// import Navbar from "./components/Navbar/Navbar";
+
+//CSS
+import "./App.css";
 
 function App() {
   // eslint-disable-next-line
@@ -22,7 +29,9 @@ function App() {
   }, []);
   return (
     <div className="app">
-      {/* <Navbar /> */}
+      <Navbar />
+      <GridLayput />
+      {/* <Blobs /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>

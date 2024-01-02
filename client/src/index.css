@@ -10,6 +10,8 @@
   src: url("../src/assets/fonts/PP\ Telegraph/PPTelegraf-UltraBold.otf");
 }
 
+/* @import url("./assets/gridData.js"); */
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +23,13 @@
   -webkit-font-smoothing: antialiased;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --pastle-pink: #f0e3ff;
   --navbar-height: 60px;
+  --universal-padding-desktop: 5vw;
+  --dev-mode-outline: #159dff;
+  --color-dark-green: #1a3939;
 }

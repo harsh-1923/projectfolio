@@ -16,7 +16,6 @@ const InfiniteScroller = ({ content }) => {
     } else if (xPercent > 0) {
       xPercent = -100;
     }
-    console.log(xPercent);
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });
     requestAnimationFrame(animate);
@@ -32,7 +31,6 @@ const InfiniteScroller = ({ content }) => {
         start: 0,
         end: window.innerHeight,
         onUpdate: (e) => {
-          //   console.log(e.getVelocity());
           direction.current = e.direction * -1;
         },
       },
@@ -46,9 +44,7 @@ const InfiniteScroller = ({ content }) => {
     <div className="main">
       <div className="sliderContainer">
         <div ref={slider} className="slider">
-          <p uppercase ref={firstText}>
-            {content} -{" "}
-          </p>
+          <p ref={firstText}>{content} - </p>
           <p ref={secondText}>{content} - </p>
         </div>
       </div>

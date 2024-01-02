@@ -1,0 +1,65 @@
+.resizable-container {
+  position: relative;
+  display: inline-block;
+  padding: 15px 0px 15px 10px;
+  width: 100%;
+}
+
+.resizable-container p {
+  margin: 0;
+}
+
+.resize-box {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--dev-mode-outline);
+  cursor: grab;
+  animation: animation-dimentions-box 500ms ease-in;
+}
+
+.dim-box-wrapper {
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  height: auto;
+  width: auto;
+  top: -25px;
+  left: 20px;
+  font-size: 14px;
+  font-family: sans-serif;
+  animation: animation-dimentions-box 500ms ease-in;
+}
+
+.top-left {
+  top: -5px;
+  left: -5px;
+}
+
+.top-right {
+  top: -5px;
+  right: -5px;
+}
+
+.bottom-left {
+  bottom: -5px;
+  left: -5px;
+}
+
+.bottom-right {
+  bottom: -5px;
+  right: -5px;
+}
+
+@keyframes animation-dimentions-box {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.outlined {
+  outline: 1px solid var(--dev-mode-outline);
+  animation: animation-dimentions-box 500ms ease-in;
+}

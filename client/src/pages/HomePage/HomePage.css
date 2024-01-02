@@ -1,0 +1,49 @@
+.hp-s1-wrapper {
+  height: 60vh;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hp-s1-wrapper span {
+  font-size: 28px;
+}
+
+.sd {
+  width: 50%;
+}
+
+.hp-s2-wrapper {
+  margin-bottom: 20vh;
+}
+
+.test {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+.hp-s1-p1-wrapper {
+  padding: 10px;
+}
+
+/* .hero-wrapper {
+  background-color: red;
+} */
+
+.g {
+  width: 50%;
+  /* background-color: pink; */
+}
+
+.tag-text {
+  font-size: 40px;
+}
+
+.align-left {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-right: 0;
+}

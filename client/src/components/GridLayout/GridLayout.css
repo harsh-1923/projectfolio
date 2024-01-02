@@ -1,0 +1,23 @@
+.gl-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  padding: 0 80px;
+  display: flex;
+  user-select: none;
+}
+
+.grid {
+  content: " ";
+  background-color: rgba(243, 135, 135, 0.165);
+  height: 100vh;
+  margin-right: 20px;
+  position: relative;
+}
+
+.last {
+  margin-right: 0px !important;
+}

@@ -3,7 +3,6 @@
   display: flex;
   height: 200px;
   overflow: hidden;
-  margin: 60vh 0;
 }
 
 .sliderContainer {
@@ -18,9 +17,9 @@
 .slider p {
   position: relative;
   margin: 0px;
-  color: #1a3939;
-  font-size: 15vw;
-  font-weight: 500;
+  color: var(--color-dark-green);
+  font-size: max(12vw, 150px);
+  font-weight: 600;
   padding-right: 50px;
   padding-bottom: 50px;
   /* background: -webkit-linear-gradient(#eee, #333);
