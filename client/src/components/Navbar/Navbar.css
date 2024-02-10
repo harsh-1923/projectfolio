@@ -18,3 +18,62 @@
   /* color: var(--dev-mode-outline); */
   transform: translateX(10px);
 }
+
+.expanded_nav_wrapper {
+  content: " ";
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  height: 10px;
+  /* outline: 1px solid red; */
+  background-color: var(--color-dark-green);
+  opacity: 0;
+}
+
+/* Animated Cross */
+
+.ac-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid red;
+  width: 20px;
+  height: 20px;
+}
+
+.bar {
+  width: 10px;
+}
+
+.bar-1 {
+  transform: rotate(0.5turn);
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50px;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.5s;
+}
+.center:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.center:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.center:hover div {
+  transform: scale(0);
+}

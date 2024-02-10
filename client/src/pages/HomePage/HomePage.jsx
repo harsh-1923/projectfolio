@@ -23,27 +23,6 @@ const HomePage = () => {
       <div className="hp-s2-wrapper">
         <InfiniteScroller content={"HARSH SHARMA"} />
       </div>
-
-      <div className="test">
-        <AnimatedDivider />
-      </div>
-
-      <OutlinedBox>
-        <div>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-          error molestiae a qui assumenda? Totam assumenda enim sapiente quis,
-          corrupti, suscipit repellat ipsum ullam accusamus nulla rerum
-          recusandae delectus itaque id ad officia ipsa fugit sed optio qui
-          error ducimus. In, minus. Neque qui debitis quidem eaque aut tempora
-          maiores?
-        </div>
-      </OutlinedBox>
-      <div className="test"></div>
-      <div className="test"></div>
-      <div className="test"></div>
-      <div className="test"></div>
-      <div className="test"></div>
-      <FillButton value={"Hover"} />
     </div>
   );
 };

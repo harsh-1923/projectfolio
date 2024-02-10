@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage/HomePage";
 
 //CSS
 import "./App.css";
+import TestPage from "./pages/TestPage/TestPage";
 
 function App() {
   // eslint-disable-next-line
@@ -27,12 +28,14 @@ function App() {
       }, 2000);
     })();
   }, []);
+
   return (
     <div className="app">
       <Navbar />
-      <GridLayput />
+      {/* <GridLayput /> */}
       {/* <Blobs /> */}
       <Routes>
+        <Route path="/test" element={<TestPage />} />
         <Route path="/" element={<HomePage />} />
       </Routes>
     </div>
